@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Eduarda eres muy tiernita ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    height:100vh;
+    background:radial-gradient(circle,#301040,#000);
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+
+/* estrellas */
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:radial-gradient(white 1px,transparent 1px);
+    background-size:40px 40px;
+    opacity:.5;
+}
+
+
+/* planeta */
+.planeta{
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    position:absolute;
+    animation:girar 15s linear infinite;
+}
+
+
+.texto{
+    position:absolute;
+    width:450px;
+    text-align:center;
+    top:0;
+    left:0;
+    transform-origin:center;
+    font-size:22px;
+    letter-spacing:3px;
+}
+
+
+@keyframes girar{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+/* corazon */
+
+.corazon{
+
+    font-size:130px;
+    animation:latir 1s infinite;
+    z-index:2;
+
+}
+
+
+@keyframes latir{
+
+    50%{
+        transform:scale(1.2);
+    }
+
+}
+
+
+
+/* musica */
+
+audio{
+    position:absolute;
+    bottom:30px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="planeta">
+
+<div class="texto">
+❤️ uwu ❤️ Eduarda tiernita ❤️ Bonita ❤️
+</div>
+
+</div>
+
+
+<div class="corazon">
+❤️
+</div>
+
+
+<audio controls autoplay loop>
+
+<source src="cancion.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+</body>
+</html>
