@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Eduarda eres muy tiernita ❤️</title>
 
 <style>
@@ -11,14 +14,14 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial;
+    font-family:Arial, sans-serif;
 }
 
 
 body{
 
     height:100vh;
-    background:radial-gradient(circle,#5b1a7a,#000);
+    background:radial-gradient(circle,#7b2cbf,#000);
     overflow:hidden;
     display:flex;
     justify-content:center;
@@ -36,31 +39,51 @@ body::before{
     position:absolute;
     width:100%;
     height:100%;
-    background-image:radial-gradient(white 1px,transparent 1px);
-    background-size:40px 40px;
-    opacity:.5;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:45px 45px;
+
+    animation:estrellas 5s infinite;
 
 }
 
 
-/* texto girando */
+@keyframes estrellas{
+
+    50%{
+        opacity:.5;
+    }
+
+}
+
+
+
+/* planeta de texto */
 
 .planeta{
 
-    width:450px;
-    height:450px;
+    width:430px;
+    height:430px;
+
     position:absolute;
+
     animation:girar 12s linear infinite;
 
 }
 
 
+
 .texto{
 
-    width:450px;
+    width:430px;
+
     text-align:center;
+
     font-size:24px;
-    letter-spacing:3px;
+
+    text-shadow:0 0 15px pink;
 
 }
 
@@ -68,13 +91,19 @@ body::before{
 
 @keyframes girar{
 
-    from{
-        transform:rotate(0deg);
-    }
 
-    to{
-        transform:rotate(360deg);
-    }
+from{
+
+transform:rotate(0deg);
+
+}
+
+
+to{
+
+transform:rotate(360deg);
+
+}
 
 }
 
@@ -84,18 +113,45 @@ body::before{
 
 .corazon{
 
-    font-size:130px;
-    animation:latir 1s infinite;
+    font-size:140px;
+
     z-index:2;
+
+    animation:
+
+    latido 1s infinite;
+
+    filter:drop-shadow(0 0 20px red);
 
 }
 
 
-@keyframes latir{
 
-    50%{
-        transform:scale(1.25);
-    }
+@keyframes latido{
+
+
+50%{
+
+transform:scale(1.25);
+
+}
+
+
+}
+
+
+
+/* mensaje */
+
+.mensaje{
+
+    position:absolute;
+
+    top:70px;
+
+    font-size:25px;
+
+    text-align:center;
 
 }
 
@@ -106,7 +162,10 @@ body::before{
 audio{
 
     position:absolute;
+
     bottom:30px;
+
+    width:300px;
 
 }
 
@@ -119,15 +178,24 @@ audio{
 <body>
 
 
+<div class="mensaje">
+
+Para Eduarda ❤️
+
+</div>
+
+
+
 <div class="planeta">
 
 <div class="texto">
 
-❤️ uwu ❤️ Eduarda tiernita ❤️ Bonita ❤️ Siempre tú ❤️
+❤️ Eduarda tiernita ❤️ Bonita ❤️ Siempre tú ❤️ Te quiero ❤️
 
 </div>
 
 </div>
+
 
 
 <div class="corazon">
@@ -140,7 +208,9 @@ audio{
 
 <audio controls loop>
 
-<source src="https://juano777-ux.github.io/hmmm/cancion.mp3" type="audio/mpeg">
+
+<source src="https://raw.githubusercontent.com/JuAno777-Ux/hmmm/main/cancion.mp3" type="audio/mpeg">
+
 
 </audio>
 
